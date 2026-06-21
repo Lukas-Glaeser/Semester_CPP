@@ -1,11 +1,11 @@
-// Test_again.cpp : Diese Datei enthält die Funktion "main". Hier beginnt und endet die Ausführung des Programms.
+// Uebung26_Person_Move-Semantik.cpp : Diese Datei enthält die Funktion "main". Hier beginnt und endet die Ausführung des Programms.
 //
 
 #include <iostream>
 
 int main()
 {
-    std::cout << "Hello World!" << std::endl;
+    std::cout << "Hello World!\n";
 }
 
 // Programm ausführen: STRG+F5 oder Menüeintrag "Debuggen" > "Starten ohne Debuggen starten"

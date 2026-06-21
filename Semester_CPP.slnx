@@ -3,6 +3,32 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="Semester_CPP/Semester_CPP.vcxproj" />
-  <Project Path="Test_again/Test_again.vcxproj" />
+  <Project Path="Semester_CPP/Semester_CPP.vcxproj" Id="2b9193cd-9384-4542-85ba-8239c9dabac8" />
+  <Project Path="Test_again/Test_again.vcxproj" Id="58675ca3-f224-4c8b-8fe1-f15623234da5" />
+  <Project Path="Uebung10_Datenkapselung_Bruch/Uebung10_Datenkapselung_Bruch.vcxproj" Id="5067d90d-1e69-45b0-b183-212642a7b524" />
+  <Project Path="Uebung11_Datenkapselung_Verkettete_Liste/Uebung11_Datenkapselung_Verkettete_Liste.vcxproj" Id="95019f80-bd58-41d1-9a5f-b9fef689c464" />
+  <Project Path="Uebung13_Konstructor_Bruch/Uebung13_Konstructor_Bruch.vcxproj" Id="1bd7c496-4969-4a93-ab2b-014a4476e0e7" />
+  <Project Path="Uebung14_UML_Person/Uebung14_UML_Person.vcxproj" Id="ee02b4d1-8984-45c0-8c8b-daed817dd661" />
+  <Project Path="Uebung15_Bruch_erweiterung/Uebung15_Bruch_erweiterung.vcxproj" Id="002f647e-266f-49d0-9c43-1d0fb482a05a" />
+  <Project Path="Uebung16_Bruch_Kopierkonstrukter_und_Operatorueberladung/Uebung16_Bruch_Kopierkonstrukter_und_Operatorueberladung.vcxproj" Id="12563e91-0fbf-4815-b818-706ebe4e4696" />
+  <Project Path="Uebung16_UML_Person_Char/Uebung16_UML_Person_Char.vcxproj" Id="ff93bae7-9b73-4cf4-9277-fb3125e811c5" />
+  <Project Path="Uebung18_Verketette_Liste_Erweiterung/Uebung18_Verketette_Liste_Erweiterung.vcxproj" Id="0b6dc001-b452-4f47-b0b8-541a37e7ffff" />
+  <Project Path="Uebung19_Zaelen_Instanzen/Uebung19_Zaelen_Instanzen.vcxproj" Id="c5eaf900-0e12-43b7-bf4e-b10a28d9e612" />
+  <Project Path="Uebung1_Verketette_Liste/Uebung1_Verketette_Liste.vcxproj" Id="b7034612-990c-4072-907d-5e28e2fa8fad" />
+  <Project Path="Uebung20_Person_const_static/Uebung20_Person_const_static.vcxproj" Id="62ad8016-a029-4211-b017-cef163357329" />
+  <Project Path="Uebung21_Person_ableiten/Uebung21_Person_ableiten.vcxproj" Id="5e4b2c76-cca0-4117-a603-546df0255c22" />
+  <Project Path="Uebung22_Person_Spaete_Bindung/Uebung22_Person_Spaete_Bindung.vcxproj" Id="8330064f-5246-432e-8adc-8f9e8bf0d798" />
+  <Project Path="Uebung23_Klassenpolymorphismus/Uebung23_Klassenpolymorphismus.vcxproj" Id="e84f8e79-1b5f-48ab-a88f-31053d36459c" />
+  <Project Path="Uebung24_Verketette_Liste_Erweiterung/Uebung24_Verketette_Liste_Erweiterung.vcxproj" Id="17bdade0-0b10-4a55-9d6c-158e1a6e180d" />
+  <Project Path="Uebung25_virtuelll_streaming/Uebung25_virtuelll_streaming.vcxproj" Id="8ecea78c-d180-44b6-9fc7-85f9f823f197" />
+  <Project Path="Uebung26_Person_Move-Semantik/Uebung26_Person_Move-Semantik.vcxproj" Id="3264c3f1-2c07-4435-8e36-da9ac067b585" />
+  <Project Path="Uebung27_Bruch_Typumwandlungsoperator/Uebung27_Bruch_Typumwandlungsoperator.vcxproj" Id="319b7c26-2cbd-474c-a814-f4d52287173a" />
+  <Project Path="Uebung2_Ausgabefunktion/Uebung2_Ausgabefunktion.vcxproj" Id="d6c4e4ef-859a-49cf-b6cd-be12ae1b0865" />
+  <Project Path="Uebung3_Struktur_zur_Klasse/Uebung3_Struktur_zur_Klasse.vcxproj" Id="c47a0543-4b66-45c4-80b2-5b165899bd5d" />
+  <Project Path="Uebung4_zwei_Punkte/Uebung4_zwei_Punkte.vcxproj" Id="7ab6e46e-32b5-4aab-bf05-56502f678ecd" />
+  <Project Path="Uebung5_Klasse_Bruch/Uebung5_Klasse_Bruch.vcxproj" Id="41161d6a-26f1-4c47-b629-98c8c37ea691" />
+  <Project Path="Uebung6_Verketette_Liste_zur_Klasse/Uebung6_Verketette_Liste_zur_Klasse.vcxproj" Id="3f3b39f6-cb3c-45d6-8075-2af5466ebb14" />
+  <Project Path="Uebung7_Verketette_Liste_zur_Klasse_Deklaration/Uebung7_Verketette_Liste_zur_Klasse_Deklaration.vcxproj" Id="326059a6-1174-4016-89c4-0b746819f7b4" />
+  <Project Path="Uebung8_Trennung_von_Implementation_Deklaration/Uebung8_Trennung_von_Implementation_Deklaration.vcxproj" Id="cb31f4b0-fb82-40e9-ba60-cca15cd63ce2" />
+  <Project Path="Uebung9_Datenkapselung/Uebung9_Datenkapselung.vcxproj" Id="83ad7276-4f8e-4b4a-bceb-ace2629ad968" />
 </Solution>
