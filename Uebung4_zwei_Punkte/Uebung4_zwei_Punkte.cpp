@@ -5,23 +5,19 @@ public:
 	int x;
 	int y;
 
-
 	void einlesen() {
-		std::cout << "Gebe x." << std::endl;
+		std::cout << "Gebe x und y ein." << std::endl;
 		std::cin >> this->x;
-		std::cout << "Gebe y." << std::endl;
 		std::cin >> this->y;
+
 	}
 
 	void ausgabe() {
-		std::cout<< "x = " << this->x << " und y = " << this->y;
+		std::cout << "x = " << this->x << " y = " << this->y << std::endl;
 	}
 
 	int abstand(Punkt& a) {
-		
-		int tempX;
-		int tempY;
-		double erg;
+		int erg, tempX, tempY;
 
 		tempX = this->x - a.x;
 		tempY = this->y - a.y;
@@ -31,31 +27,32 @@ public:
 		return erg;
 	}
 
-	Punkt addieren(Punkt& a) {
-		Punkt temp;
-		temp.x = this->x + a.x;
-		temp.y = this->y + a.y;
+	Punkt add(Punkt& a) {
+		Punkt erg;
 
-		return temp;
+		erg.x = this->x + a.x;
+		erg.y = this->y + a.y;
+
+		return erg;
 	}
+
 };
 
+
+
 int main() {
+	Punkt kord0, kord1, kord2;
 
-	Punkt kordinate0;
-	Punkt kordinate1;
+	kord0.einlesen();
+	kord1.einlesen();
 
-	kordinate0.einlesen();
-	kordinate1.einlesen();
+	std::cout << "Abstand von P0 ";
+	kord0.ausgabe();
+	std::cout << " und P1 ";
+	kord1.ausgabe();
+	std::cout << " lautet = " << kord0.abstand(kord1) << std::endl;
 
-	std::cout << "Der Abstand von ";
-	kordinate0.ausgabe();
-	std::cout << " zu ";
-	kordinate1.ausgabe();
-	std::cout << " ist "<< kordinate0.abstand(kordinate1) << std::endl;
-
-	Punkt kordinate2 = kordinate0.addieren(kordinate1);
-	std::cout << "Der neue Punkt lautet ";
-	kordinate2.ausgabe();
-
+	std::cout << "Add P0 and P1 = ";
+	kord2 = kord0.add(kord1);
+	kord2.ausgabe();
 }
