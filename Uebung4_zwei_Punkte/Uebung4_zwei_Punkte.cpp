@@ -1,20 +1,61 @@
-// Uebung4_zwei_Punkte.cpp : Diese Datei enthält die Funktion "main". Hier beginnt und endet die Ausführung des Programms.
-//
-
 #include <iostream>
 
-int main()
-{
-    std::cout << "Hello World!\n";
+class Punkt {
+public:
+	int x;
+	int y;
+
+
+	void einlesen() {
+		std::cout << "Gebe x." << std::endl;
+		std::cin >> this->x;
+		std::cout << "Gebe y." << std::endl;
+		std::cin >> this->y;
+	}
+
+	void ausgabe() {
+		std::cout<< "x = " << this->x << " und y = " << this->y;
+	}
+
+	int abstand(Punkt& a) {
+		
+		int tempX;
+		int tempY;
+		double erg;
+
+		tempX = this->x - a.x;
+		tempY = this->y - a.y;
+
+		erg = sqrt(tempX * tempX + tempY * tempY);
+
+		return erg;
+	}
+
+	Punkt addieren(Punkt& a) {
+		Punkt temp;
+		temp.x = this->x + a.x;
+		temp.y = this->y + a.y;
+
+		return temp;
+	}
+};
+
+int main() {
+
+	Punkt kordinate0;
+	Punkt kordinate1;
+
+	kordinate0.einlesen();
+	kordinate1.einlesen();
+
+	std::cout << "Der Abstand von ";
+	kordinate0.ausgabe();
+	std::cout << " zu ";
+	kordinate1.ausgabe();
+	std::cout << " ist "<< kordinate0.abstand(kordinate1) << std::endl;
+
+	Punkt kordinate2 = kordinate0.addieren(kordinate1);
+	std::cout << "Der neue Punkt lautet ";
+	kordinate2.ausgabe();
+
 }
-
-// Programm ausführen: STRG+F5 oder Menüeintrag "Debuggen" > "Starten ohne Debuggen starten"
-// Programm debuggen: F5 oder "Debuggen" > Menü "Debuggen starten"
-
-// Tipps für den Einstieg: 
-//   1. Verwenden Sie das Projektmappen-Explorer-Fenster zum Hinzufügen/Verwalten von Dateien.
-//   2. Verwenden Sie das Team Explorer-Fenster zum Herstellen einer Verbindung mit der Quellcodeverwaltung.
-//   3. Verwenden Sie das Ausgabefenster, um die Buildausgabe und andere Nachrichten anzuzeigen.
-//   4. Verwenden Sie das Fenster "Fehlerliste", um Fehler anzuzeigen.
-//   5. Wechseln Sie zu "Projekt" > "Neues Element hinzufügen", um neue Codedateien zu erstellen, bzw. zu "Projekt" > "Vorhandenes Element hinzufügen", um dem Projekt vorhandene Codedateien hinzuzufügen.
-//   6. Um dieses Projekt später erneut zu öffnen, wechseln Sie zu "Datei" > "Öffnen" > "Projekt", und wählen Sie die SLN-Datei aus.

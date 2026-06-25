@@ -1,20 +1,99 @@
-// Uebung5_Klasse_Bruch.cpp : Diese Datei enthält die Funktion "main". Hier beginnt und endet die Ausführung des Programms.
-//
-
 #include <iostream>
 
-int main()
-{
-    std::cout << "Hello World!\n";
+class Bruch {
+public:
+	int zaeler;
+	int nenner;
+
+	void Eingabe() {
+		std::cout << "Gebe eine zahl ein ";
+		std::cin >> zaeler;
+		std::cout << " Gebe eine zahl ein ";
+		std::cin >> nenner;
+	}
+
+	void ausgabe() {
+		std::cout << "zaeler = " << this->zaeler << " und nenner = " << this->nenner << std::endl;
+	}
+
+	void mult(Bruch& a) {
+		int tZaeler;
+		int tNenner;
+
+		tZaeler = this->zaeler * a.zaeler;
+		tNenner = this->nenner * a.nenner;
+
+		std::cout << "Bruch0 und Bruch1 = " << tZaeler << " / " << tNenner << std::endl;
+	}
+
+	void div(Bruch& a) {
+		int tZaeler;
+		int tNenner;
+
+		tZaeler = this->zaeler * a.nenner;
+		tNenner = this->nenner * a.zaeler;
+
+		std::cout << "Bruch0 und Bruch1 = " << tZaeler << " / " << tNenner << std::endl;
+	}
+
+	void add(Bruch& a) {
+		int tZaeler;
+		int tNenner;
+
+		if (this->nenner != a.nenner) {
+
+			tZaeler = this->zaeler * a.nenner + a.zaeler * this->nenner;
+			tNenner = this->nenner * a.nenner;
+
+		}
+		else {
+
+			tZaeler = this->zaeler + a.zaeler;
+			tNenner = this->nenner;
+
+		}
+
+		std::cout << "Bruch0 und Bruch1 = " << tZaeler << " / " << tNenner << std::endl;
+	}
+
+	void sub(Bruch& a) {
+		int tZaeler;
+		int tNenner;
+
+		if (this->nenner != a.nenner) {
+
+			tZaeler = this->zaeler * a.nenner - a.zaeler * this->nenner;
+			tNenner = this->nenner * a.nenner;
+
+		}
+		else {
+
+			tZaeler = this->zaeler - a.zaeler;
+			tNenner = this->nenner;
+
+		}
+
+		std::cout << "Bruch0 und Bruch1 = " << tZaeler << " / " << tNenner << std::endl;
+	}
+};
+
+int main() {
+	Bruch Test0;
+	Bruch Test1;
+
+	Test0.Eingabe();
+	Test1.Eingabe();
+
+	Test0.ausgabe();
+	Test1.ausgabe();
+
+	Test0.mult(Test1);
+
+	Test0.div(Test1);
+
+	Test0.add(Test1);
+
+	Test0.sub(Test1);
+
+
 }
-
-// Programm ausführen: STRG+F5 oder Menüeintrag "Debuggen" > "Starten ohne Debuggen starten"
-// Programm debuggen: F5 oder "Debuggen" > Menü "Debuggen starten"
-
-// Tipps für den Einstieg: 
-//   1. Verwenden Sie das Projektmappen-Explorer-Fenster zum Hinzufügen/Verwalten von Dateien.
-//   2. Verwenden Sie das Team Explorer-Fenster zum Herstellen einer Verbindung mit der Quellcodeverwaltung.
-//   3. Verwenden Sie das Ausgabefenster, um die Buildausgabe und andere Nachrichten anzuzeigen.
-//   4. Verwenden Sie das Fenster "Fehlerliste", um Fehler anzuzeigen.
-//   5. Wechseln Sie zu "Projekt" > "Neues Element hinzufügen", um neue Codedateien zu erstellen, bzw. zu "Projekt" > "Vorhandenes Element hinzufügen", um dem Projekt vorhandene Codedateien hinzuzufügen.
-//   6. Um dieses Projekt später erneut zu öffnen, wechseln Sie zu "Datei" > "Öffnen" > "Projekt", und wählen Sie die SLN-Datei aus.

@@ -1,20 +1,80 @@
-// Uebung3_Struktur_zur_Klasse.cpp : Diese Datei enthält die Funktion "main". Hier beginnt und endet die Ausführung des Programms.
-//
-
 #include <iostream>
 
-int main()
-{
-    std::cout << "Hello World!\n";
+class Foobar {
+public:
+	int foo;
+	int bar;
+
+	void eigenschaften_ausgabe() {
+		std::cout << "Beginne ausgabe!   Foo = " << this->foo << "  Bar = " << this->bar << std::endl;
+	}
+
+	void foo_einlesen() {
+		std::cout << "Gebe eine zahl ein!" << std::endl;
+		std::cin >> this->foo;
+	}
+
+	void bar_einlesen() {
+		std::cout << "Gebe eine zahl ein!" << std::endl;
+		std::cin >> this->bar;
+	}
+
+	void eigenschaften_einlesen() {
+		std::cout << "Es beginnt die ausfuerung!" << std::endl;
+		foo_einlesen();
+		bar_einlesen();
+	}
+};
+
+int main() {
+
+	Foobar instanz0;
+	Foobar instanz1;
+
+	instanz0.eigenschaften_einlesen();
+	instanz0.eigenschaften_ausgabe();
+
+	instanz1.eigenschaften_einlesen();
+	instanz1.eigenschaften_ausgabe();
 }
 
-// Programm ausführen: STRG+F5 oder Menüeintrag "Debuggen" > "Starten ohne Debuggen starten"
-// Programm debuggen: F5 oder "Debuggen" > Menü "Debuggen starten"
 
-// Tipps für den Einstieg: 
-//   1. Verwenden Sie das Projektmappen-Explorer-Fenster zum Hinzufügen/Verwalten von Dateien.
-//   2. Verwenden Sie das Team Explorer-Fenster zum Herstellen einer Verbindung mit der Quellcodeverwaltung.
-//   3. Verwenden Sie das Ausgabefenster, um die Buildausgabe und andere Nachrichten anzuzeigen.
-//   4. Verwenden Sie das Fenster "Fehlerliste", um Fehler anzuzeigen.
-//   5. Wechseln Sie zu "Projekt" > "Neues Element hinzufügen", um neue Codedateien zu erstellen, bzw. zu "Projekt" > "Vorhandenes Element hinzufügen", um dem Projekt vorhandene Codedateien hinzuzufügen.
-//   6. Um dieses Projekt später erneut zu öffnen, wechseln Sie zu "Datei" > "Öffnen" > "Projekt", und wählen Sie die SLN-Datei aus.
+
+/*
+#include <iostream>
+
+struct Foobar {
+	int foo;
+	int bar;
+};
+
+void eigenschaften_ausgabe(Foobar& object) {
+	std::cout << "Beginne ausgabe!   Foo = " << object.foo << "  Bar = " << object.bar << std::endl;
+}
+
+void foo_einlesen(Foobar& object) {
+	std::cout << "Gebe eine zahl ein!" << std::endl;
+	std::cin >> object.foo;
+}
+
+void bar_einlesen(Foobar& object) {
+	std::cout << "Gebe eine zahl ein!" << std::endl;
+	std::cin >> object.bar;
+}
+
+void eigenschaften_einlesen(Foobar& object) {
+	std::cout << "Es beginnt die ausfuerung!" << std::endl;
+	foo_einlesen(object);
+	bar_einlesen(object);
+}
+
+int main() {
+
+	Foobar instanz0;
+	Foobar instanz1;
+
+	eigenschaften_einlesen(instanz0);
+	eigenschaften_einlesen(instanz1);
+	eigenschaften_ausgabe(instanz0);
+	eigenschaften_ausgabe(instanz1);
+}*/
