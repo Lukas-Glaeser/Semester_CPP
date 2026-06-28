@@ -3,6 +3,7 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
+  <Project Path="Probeklaus2026/Probeklaus2026.vcxproj" Id="ae1654a6-6dea-4cb9-a495-cf5667d5cac8" />
   <Project Path="Semester_CPP/Semester_CPP.vcxproj" Id="2b9193cd-9384-4542-85ba-8239c9dabac8" />
   <Project Path="Test_again/Test_again.vcxproj" Id="58675ca3-f224-4c8b-8fe1-f15623234da5" />
   <Project Path="Uebung10_Datenkapselung_Bruch/Uebung10_Datenkapselung_Bruch.vcxproj" Id="5067d90d-1e69-45b0-b183-212642a7b524" />

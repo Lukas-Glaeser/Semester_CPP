@@ -139,7 +139,11 @@
     </Manifest>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Bruch.cpp" />
     <ClCompile Include="Uebung13_Konstructor_Bruch.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Bruch.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

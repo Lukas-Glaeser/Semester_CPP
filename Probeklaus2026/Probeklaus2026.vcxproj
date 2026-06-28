@@ -21,10 +21,9 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>18.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{83ad7276-4f8e-4b4a-bceb-ace2629ad968}</ProjectGuid>
-    <RootNamespace>Uebung9Datenkapselung</RootNamespace>
+    <ProjectGuid>{ae1654a6-6dea-4cb9-a495-cf5667d5cac8}</ProjectGuid>
+    <RootNamespace>Probeklaus2026</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>Uebung09_Datenkapselung</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -140,11 +139,7 @@
     </Manifest>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Punkt.cpp" />
-    <ClCompile Include="Uebung9_Datenkapselung.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Punkt.h" />
+    <ClCompile Include="Probeklaus2026.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

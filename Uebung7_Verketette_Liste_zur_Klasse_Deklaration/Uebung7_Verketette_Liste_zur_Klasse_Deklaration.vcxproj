@@ -24,7 +24,7 @@
     <ProjectGuid>{326059a6-1174-4016-89c4-0b746819f7b4}</ProjectGuid>
     <RootNamespace>Uebung7VerketetteListezurKlasseDeklaration</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>Uebung07_Verketette_Liste_zur_Klasse_Deklaration</ProjectName>
+    <ProjectName>Uebung07_Punkt_zur_Klasse_Deklaration</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -140,7 +140,11 @@
     </Manifest>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Uebung7_Verketette_Liste_zur_Klasse_Deklaration.cpp" />
+    <ClCompile Include="Punkt.cpp" />
+    <ClCompile Include="Uebung7_Punkt_zur_Klasse_Deklaration.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Punkt.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
